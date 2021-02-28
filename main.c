@@ -7,17 +7,17 @@
 
 #include "configuration_bits.h"
 
-#include "../driver/IO/RBCTL_hardware.h"
-#include "../driver/uart/uart.h"
-#include "../driver/DS1307_RTC.h"
-#include "../driver/i2cmaster.h"
-#include "../driver/pump.h"
-#include "../feature/Parser.h"
-#include "../driver/lcd/lcd.h"
-#include "../feature/Log/Log.h"
-#include "../feature/timetable/timetable.h"
-#include "../feature/SystemTime.h"
-#include "../driver/eeprom/eeprom.h"
+#include "driver/IO/RBCTL_hardware.h"
+#include "driver/uart/uart.h"
+#include "driver/DS1307_RTC.h"
+#include "driver/i2cmaster.h"
+#include "driver/pump.h"
+#include "feature/Parser.h"
+#include "driver/lcd/lcd.h"
+#include "feature/Log/Log.h"
+#include "feature/timetable/timetable.h"
+#include "feature/SystemTime.h"
+#include "driver/eeprom/eeprom.h"
 
 #include <avr/io.h>
 //remove later
