@@ -1,4 +1,4 @@
-#include <catch2/catch.hpp>
+#include "gtest/gtest.h"
 
 #include <inttypes.h>
 
@@ -10,8 +10,9 @@ extern "C" {
 #include <iostream>
 
 
-//TEST_CASE("test_internal_eeprom", "[eeprom]") {
-    //test_init();
+TEST(test_internal_eeprom, eeprom) {
+	EXPECT_EQ(1 == 0);
+    	//test_init();
 
 	//REQUIRE(sizeof(block) == EEPROM_BLOCK_SIZE);
 
@@ -55,4 +56,4 @@ extern "C" {
 		REQUIRE(data_res_2[n] == data_dummy_2[n]);
 	}*/
 
-//}
+}
