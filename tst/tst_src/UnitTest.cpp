@@ -1,14 +1,3 @@
-#define CATCH_CONFIG_MAIN
-
-#include <catch2/catch.hpp>
-
-//Code to test: "J:/MeineDaten/Projekte/HochbeetSteuerung/Firmware/Firmware/RaisedBedController/RaisedBedController/"
-
-
-
-// Programm ausführen: STRG+F5 oder Menüeintrag "Debuggen" > "Starten ohne Debuggen starten"
-// Programm debuggen: F5 oder "Debuggen" > Menü "Debuggen starten"
-
 //Example UnitTest
 int Factorial(int number) {
     return number <= 1 ? number : Factorial(number - 1) * number;  // fail
