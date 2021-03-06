@@ -2,4 +2,5 @@ language: cpp
 compiler: g++
 
 script:
-- ${TRAVIS_BUILD_DIR}
+- cd ${TRAVIS_BUILD_DIR}
+  make
