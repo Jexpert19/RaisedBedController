@@ -5,10 +5,8 @@
  * Author : Jannis Diekmann
  */ 
 
-#ifndef UNIT_TEST
 
 #include "configuration_bits.h"
-
 #include "driver/IO/RBCTL_hardware.h"
 #include "driver/uart/uart.h"
 #include "driver/DS1307_RTC.h"
@@ -42,7 +40,8 @@ void error(){
 }
 
 
-int main(void){
+int main(int argc, char **argv){
+#ifndef UNIT_TEST
     RBCTL_hardware_init();
     
 	uart0_init(UART_BAUD_SELECT(19200, F_CPU));
@@ -64,6 +63,11 @@ int main(void){
 	while(1){
         asm ("nop");
 	}
-}
-
+	
+#endif // UNIT_TEST
+#ifdef UNIT_TEST
+#include "gtest/gtest.h"
+	::testing::InitGoogleTest(&argc, argv);
+	return RUN_ALL_TESTS();
 #endif
+}
