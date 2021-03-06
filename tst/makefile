@@ -1,7 +1,7 @@
 TARGET_EXEC ?= all.out
 
 BUILD_DIR ?= ./tst_build
-SRC_DIRS ?= ./tst_src ../src /home/jannis/Dokumente/Datenbank/SoftwareDev/CPP/Catch2-master_Testframework/single_include
+SRC_DIRS ?= ./tst_src ../src
 
 SRCS := $(shell find $(SRC_DIRS) -name *.cpp -or -name *.c -or -name *.s)
 OBJS := $(SRCS:%=$(BUILD_DIR)/%.o)
