@@ -17,8 +17,8 @@ jobs:
     #  run: ./configure
       
     - name: make tst
-      run: cd tst
-           make
+      working-directory: ./tst
+      run: make
     #- name: make check
     #  run: make check
     #- name: make distcheck
