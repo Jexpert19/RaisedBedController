@@ -1,7 +1,7 @@
 TARGET_EXEC ?= all.out
 
 BUILD_DIR ?= ./tst_build
-SRC_DIRS ?= ./tst_src ../src ./googletest/src
+SRC_DIRS ?= ./tst_src ../src ./googletest/src ./googletest/include
 
 SRCS := $(shell find $(SRC_DIRS) -name *.cpp -or -name *.c -or -name *.s)
 OBJS := $(SRCS:%=$(BUILD_DIR)/%.o)
