@@ -41,7 +41,7 @@ void error(){
 }
 
 
-int main(int argc, char **argv){
+int main(void){
     RBCTL_hardware_init();
     
 	uart0_init(UART_BAUD_SELECT(19200, F_CPU));
