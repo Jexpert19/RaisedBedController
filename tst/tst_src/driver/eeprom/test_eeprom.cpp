@@ -11,7 +11,7 @@ extern "C" {
 
 
 TEST(test_internal_eeprom, eeprom) {
-	EXPECT_EQ(1 == 0);
+	EXPECT_EQ(1, 0);
     	//test_init();
 
 	//REQUIRE(sizeof(block) == EEPROM_BLOCK_SIZE);
