@@ -10,4 +10,4 @@ add_executable(${PROJECT_NAME} "./test_src/test_main.cpp")
 include_directories(./lib/googletest/include/)
 
 # put all together
-target_link_libraries(${PROJECT_NAME} "./lib/googletest/src/libgtest.a ")
+target_link_libraries(${PROJECT_NAME} "./lib/googletest/src/libgtest.a")
