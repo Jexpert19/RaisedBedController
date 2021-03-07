@@ -1,6 +1,6 @@
 # RaisedBedController
 
-![Build](https://github.com/Jexpert19/RaisedBedController/actions/workflows/c-cpp.yml/badge.svg)
+![BuildStateBadage](https://github.com/Jexpert19/RaisedBedController/actions/workflows/c-cpp.yml/badge.svg)
 
 Device for watering plants in your garden
 
