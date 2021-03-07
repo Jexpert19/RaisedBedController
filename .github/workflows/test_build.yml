@@ -13,9 +13,9 @@ jobs:
     - uses: actions/checkout@v2
     #- name: configure
     #  run: ./configure
-    - name: cmake test_build
-    - run: cmake /test
-    - run: cmake ..
+    - name: cmake_test_build
+      run: cmake /test |
+           cmake ..
     #- name: make check
     #  run: make check
     #- name: make distcheck
