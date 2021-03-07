@@ -28,7 +28,9 @@ jobs:
         sudo ln -s /usr/lib/libgtest_main.a /usr/local/lib/googletest/libgtest_main.a
     - name: test_install
       run: |
-        gcc -lgtest -lgtest_main -lpthread
+        g++ -lgtest
+        g++ -lgtest_main
+        g++ -lpthread
     
     - name: cmake_build
       run: |
