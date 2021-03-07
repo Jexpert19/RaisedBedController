@@ -12,16 +12,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     
-    - name: install_gtest
-      run: |
-        git clone https://github.com/google/googletest.git
-        cd googletest
-        mkdir build
-        cd build
-        cmake ..
-        make
-        sudo make install
-        
     - name: cmake_build
       run: |
         mkdir test_build
