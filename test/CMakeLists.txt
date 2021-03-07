@@ -8,6 +8,3 @@ add_compile_options(-lgtest -lgtest_main -lpthread)
 
 # add the executable
 add_executable(${PROJECT_NAME} ${CMAKE_CURRENT_SOURCE_DIR}/test_src/test_main.cpp)
-
-# put all together
-target_link_libraries(${PROJECT_NAME})
