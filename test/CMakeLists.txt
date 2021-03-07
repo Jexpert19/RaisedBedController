@@ -10,10 +10,10 @@ message(INFO ${CMAKE_CURRENT_SOURCE_DIR})
 
 # include googletest library
 # header
-find_path(LIBGTEST_INC ${CMAKE_CURRENT_SOURCE_DIR}/lib/googletest/include)
-include_directories(${LIBGTEST_INC})
+# find_path(LIBGTEST_INC ${CMAKE_CURRENT_SOURCE_DIR}/lib/googletest/include)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/lib/googletest/include)
 # source
-find_library(LIBGTEST_SRC ${CMAKE_CURRENT_SOURCE_DIR}/lib/googletest/src/libgtest.a)
+# find_library(LIBGTEST_SRC ${CMAKE_CURRENT_SOURCE_DIR}/lib/googletest/src/libgtest.a)
 
 # put all together
-target_link_libraries(${PROJECT_NAME} ${LIBGTEST_SRC})
+target_link_libraries(${PROJECT_NAME} ${CMAKE_CURRENT_SOURCE_DIR}/lib/googletest/src/libgtest.a)
