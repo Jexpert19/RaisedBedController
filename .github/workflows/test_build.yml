@@ -28,7 +28,7 @@ jobs:
         sudo ln -s /usr/lib/libgtest_main.a /usr/local/lib/googletest/libgtest_main.a
     - name: test_install
       run: |
-        g++ -lgtest
+        g++ -lgteste
         g++ -lgtest_main
         g++ -lpthread
     
