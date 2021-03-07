@@ -11,4 +11,4 @@ INCLUDE_DIRECTORIES(./lib/googletest/include)
 LINK_DIRECTORIES(./lib/googletest/src)
 
 # put all together
-TARGET_LINK_LIBRARIES(TestBuild libgtest_main)
+TARGET_LINK_LIBRARIES(TestBuild libgtest_main.a)
