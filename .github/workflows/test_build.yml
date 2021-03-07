@@ -16,6 +16,6 @@ jobs:
     - name: cmake_test_build
       run: cmake ./test
     - name: run_tests
-      run: TestBuild
+      run: ./TestBuild
     #- name: make distcheck
     #  run: make distcheck
