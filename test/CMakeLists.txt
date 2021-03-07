@@ -9,11 +9,8 @@ add_executable(${PROJECT_NAME} ${CMAKE_CURRENT_SOURCE_DIR}/test_src/test_main.cp
 message(INFO ${CMAKE_CURRENT_SOURCE_DIR})
 
 # include googletest library
-# header
-# find_path(LIBGTEST_INC ${CMAKE_CURRENT_SOURCE_DIR}/lib/googletest/include)
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/lib/googletest/include)
-# source
-# find_library(LIBGTEST_SRC ${CMAKE_CURRENT_SOURCE_DIR}/lib/googletest/src/libgtest.a)
+target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/lib/googletest/include)
+
 
 # put all together
 target_link_libraries(${PROJECT_NAME} ${CMAKE_CURRENT_SOURCE_DIR}/lib/googletest/src/libgtest.a)
