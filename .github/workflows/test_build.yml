@@ -16,6 +16,6 @@ jobs:
         mkdir test_build
         cd test_build
         cmake ../test
-        cmake --build
+        cmake --build .
     - name: run_tests
       run: ./test_build/TestBuild
