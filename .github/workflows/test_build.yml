@@ -8,17 +8,14 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
     #- name: configure
     #  run: ./configure
-      
-    - name: make tst
+    - name: cmake test_build
       working-directory: ./tst
-      run: make
+      run: cmake ..
     #- name: make check
     #  run: make check
     #- name: make distcheck
