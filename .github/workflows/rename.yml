@@ -9,5 +9,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: git mv tst test
+      - run: git mv /test/tst_src /test/test_src
       - uses: EndBug/add-and-commit@v5.1.0
