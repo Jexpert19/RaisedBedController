@@ -8,7 +8,10 @@ add_executable(${PROJECT_NAME} ./test_src/test_main.cpp)
 
 # include googletest library
 include_directories(./lib/googletest/include/)
-find_library(libgtest.a ./lib/googletest/src/)
+find_library(libgtest.a 
+             NAME libgtest
+             HINTS ./lib/googletest/src/
+             )
 
 # put all together
 target_link_libraries(${PROJECT_NAME} ${libgtest})
