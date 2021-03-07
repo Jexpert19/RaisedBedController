@@ -11,8 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    #- name: configure
-    #  run: ./configure
     - name: cmake_test_build
       run: |
         mkdir test_build
@@ -21,5 +19,3 @@ jobs:
         cmake --build
     - name: run_tests
       run: ./test_build/TestBuild
-    #- name: make distcheck
-    #  run: make distcheck
