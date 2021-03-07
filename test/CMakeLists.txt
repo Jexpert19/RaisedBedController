@@ -6,6 +6,8 @@ project(TestBuild)
 # add the executable
 add_executable(${PROJECT_NAME} ${CMAKE_CURRENT_SOURCE_DIR}/test_src/test_main.cpp)
 
+message(INFO ${CMAKE_CURRENT_SOURCE_DIR})
+
 # include googletest library
 # header
 find_path(LIBGTEST_INC ${CMAKE_CURRENT_SOURCE_DIR}/lib/googletest/include)
