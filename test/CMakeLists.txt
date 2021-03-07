@@ -4,13 +4,13 @@ cmake_minimum_required(VERSION 3.10)
 project(TestBuild)
 
 # add the executable
-add_executable(${PROJECT_NAME} ./test_src/test_main.cpp)
+add_executable(${PROJECT_NAME} "./test_src/test_main.cpp")
 
 # include googletest library
 include_directories(./lib/googletest/include/)
 find_library(libgtest.a 
              NAME libgtest
-             HINTS ./lib/googletest/src/
+             HINTS "./lib/googletest/src/"
              )
 
 # put all together
