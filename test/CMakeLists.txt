@@ -7,7 +7,11 @@ project(TestBuild)
 add_executable(${PROJECT_NAME} "./test_src/test_main.cpp")
 
 # include googletest library
-include_directories(./lib/googletest/include/)
+# header
+find_path(LIBGTEST_INC "./lib/googletest/include")
+include_directories(${LIBGTEST_INC})
+# source
+find_library(LIBGTEST_SRC "./lib/googletest/src/libgtest.a")
 
 # put all together
-target_link_libraries(${PROJECT_NAME} "./lib/googletest/src/libgtest.a")
+target_link_libraries(${PROJECT_NAME} ${LIBGTEST_SRC})
