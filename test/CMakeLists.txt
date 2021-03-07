@@ -4,7 +4,7 @@ cmake_minimum_required(VERSION 3.10)
 project(TestBuild)
 
 # include googletest library
-target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/lib/googletest/include)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/lib/googletest/include)
 
 # add the executable
 add_executable(${PROJECT_NAME} ${CMAKE_CURRENT_SOURCE_DIR}/test_src/test_main.cpp)
