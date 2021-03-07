@@ -14,8 +14,12 @@ jobs:
     #- name: configure
     #  run: ./configure
     - name: cmake_test_build
-      run: cmake ./test
+      run: |
+        mkdir test_build
+        cd test_build
+        cmake ../test
+        cmake --build
     - name: run_tests
-      run: ./TestBuild
+      run: ./test_build/TestBuild
     #- name: make distcheck
     #  run: make distcheck
