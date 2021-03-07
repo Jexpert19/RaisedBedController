@@ -11,4 +11,4 @@ INCLUDE_DIRECTORIES(./lib/googletest/include)
 find_library(libgtest_main.a ./lib/googletest/src/)
 
 # put all together
-TARGET_LINK_LIBRARIES(${PROJECT_NAME} ${libgtest_main.a})
+TARGET_LINK_LIBRARIES(${PROJECT_NAME} ${libgtest_main})
