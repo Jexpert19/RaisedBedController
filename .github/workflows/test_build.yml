@@ -12,6 +12,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
                 
+    - name: install_avr_build_environment
+      run: sudo apt-get install avr-libc binutils-avr gcc-avr avrdude 
+                
     - name: make_build
       run: |
         cd test
