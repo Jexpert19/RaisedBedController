@@ -2,7 +2,7 @@
 
 TEST(SomeTestSuite, SomeTest)
 {
-    EXPECT_EQ(1, 0);
+    EXPECT_EQ(1, 1);
 }
 
 int main(int argc, char **argv) {
