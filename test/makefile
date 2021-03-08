@@ -28,9 +28,9 @@ LIBS = 					\
 	-pthread
 
 # define the C source files
-SRCS = 								\
+SRCS = 								#\
 	./test_src/test_main.cpp				\
-	./test_src/driver/eeprom/test_eeprom.cpp
+	#./test_src/driver/eeprom/test_eeprom.cpp
 
 # define the C object files 
 #
