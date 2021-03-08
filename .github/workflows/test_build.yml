@@ -11,25 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    
-    - name: install_gtest
-      run: |
-        sudo apt-get install libc6-dev
-        sudo apt-get install libgtest-dev
-        cd /usr/src/googletest/googletest
-        sudo mkdir build
-        cd build
-        sudo cmake ..
-        sudo make
-        sudo cp libgtest* /usr/lib/
-        cd ..
-        sudo rm -rf buil
-        sudo mkdir /usr/local/lib/googletest
-        sudo ln -s /usr/lib/libgtest.a /usr/local/lib/googletest/libgtest.a
-        sudo ln -s /usr/lib/libgtest_main.a /usr/local/lib/googletest/libgtest_main.a
-    - name: test_install
-      run: |
-        g++ -pthread -lgtest_main -lgtest
         
     - name: make_build
       run: |
