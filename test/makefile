@@ -60,10 +60,10 @@ $(MAIN): $(OBJS)
 # the rule(a .c file) and $@: the name of the target of the rule (a .o file) 
 # (see the gnu make manual section about automatic variables)
 .c.o:
-        $(CC) $(CFLAGS) $(INCLUDES) -c $<  -o $@
+	$(CC) $(CFLAGS) $(INCLUDES) -c $<  -o $@
 
 clean:
-        $(RM) *.o *~ $(MAIN)
+	$(RM) *.o *~ $(MAIN)
 	
 depend: $(SRCS)
-        makedepend $(INCLUDES) $^
+	makedepend $(INCLUDES) $^
