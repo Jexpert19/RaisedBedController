@@ -38,6 +38,6 @@ jobs:
         cd test_build
         make ..
         cd ..
-        
+        ls
     - name: run_tests
       run: ./test_build/TestBuild
