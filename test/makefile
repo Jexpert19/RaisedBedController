@@ -4,7 +4,7 @@
 # 'make'        build executable file 'mycc'
 # 'make clean'  removes all .o and executable files
 #
-r
+
 # define the C compiler to use
 CC = g++
 
