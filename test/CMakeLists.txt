@@ -4,7 +4,7 @@ cmake_minimum_required(VERSION 3.10)
 project(TestBuild)
 
 # for gtest lib
-add_compile_options(-pthread -lgtest)
+#add_compile_options()
 
 # add the executable
-add_executable(${PROJECT_NAME} ${CMAKE_CURRENT_SOURCE_DIR}/test_src/test_main.cpp)
+add_executable(${PROJECT_NAME} ${CMAKE_CURRENT_SOURCE_DIR}/test_src/test_main.cpp -pthread -lgtest)
