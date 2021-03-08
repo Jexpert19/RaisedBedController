@@ -7,4 +7,4 @@ project(TestBuild)
 add_executable(${PROJECT_NAME} ${CMAKE_CURRENT_SOURCE_DIR}/test_src/test_main.cpp)
 
 # for gtest lib
-add_compile_options(-pthread -lgtest_main -lgtest)
+add_compile_options(-pthread -lgtest -lgtest_main)
