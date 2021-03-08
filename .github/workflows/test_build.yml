@@ -31,12 +31,16 @@ jobs:
       run: |
         g++ -pthread -lgtest_main -lgtest
     
-    - name: cmake_build
+    #- name: cmake_build
+     # run: |
+      #  mkdir test_build
+       # cd test_build
+        #cmake ../test
+        #cmake --build .
+    - name: make_build
       run: |
-        mkdir test_build
-        cd test_build
-        cmake ../test
-        cmake --build .
+        cd test
+        make
         
     - name: run_tests
       run: ./test_build/TestBuild
