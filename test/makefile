@@ -23,10 +23,12 @@ LFLAGS = -L./lib/googletest/lib/
 # define any libraries to link into executable:
 #   if I want to link in libraries (libx.so or libx.a) I use the -llibname 
 #   option, something like (this will link in libmylib.so and libm.so:
-LIBS = -lgtest -pthread
+LIBS = 	-lgtest
+	-pthread
 
 # define the C source files
-SRCS = ./test_src/test_main.cpp
+SRCS = 	./test_src/test_main.cpp
+	./test_src/driver/eeprom/test_eeprom.cpp
 
 # define the C object files 
 #
