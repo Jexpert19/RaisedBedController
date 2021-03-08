@@ -38,4 +38,4 @@ jobs:
         chmod a+x TestBuild
         
     - name: run_tests
-      run: ./TestBuild
+      run: TestBuild
