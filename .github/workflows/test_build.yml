@@ -34,10 +34,6 @@ jobs:
     - name: make_build
       run: |
         cd test
-        mkdir test_build
-        cd test_build
-        make ..
-        cd ..
-        ls
+        make
     - name: run_tests
-      run: ./test_build/TestBuild
+      run: TestBuild
