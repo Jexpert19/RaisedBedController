@@ -13,17 +13,17 @@ CFLAGS = -Wall -g
 
 # define any directories containing header files other than /usr/include
 #
-INCLUDES = 
+INCLUDES = -I./lib/googletest/include
 
 # define library paths in addition to /usr/lib
 #   if I wanted to include libraries not in /usr/lib I'd specify
 #   their path using -Lpath, something like:
-LFLAGS = -I./lib/googletest/include
+LFLAGS = -L./lib/googletest/lib/
 
 # define any libraries to link into executable:
 #   if I want to link in libraries (libx.so or libx.a) I use the -llibname 
 #   option, something like (this will link in libmylib.so and libm.so:
-LIBS = -l./lib/googletest/lib/gtest
+LIBS = -lgtest
 
 # define the C source files
 SRCS = ./test_src/test_main.cpp
