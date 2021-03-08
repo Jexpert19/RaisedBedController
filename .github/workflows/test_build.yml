@@ -23,7 +23,7 @@ jobs:
         sudo make
         sudo cp libgtest* /usr/lib/
         cd ..
-        sudo rm -rf build
+        sudo rm -rf buil
         sudo mkdir /usr/local/lib/googletest
         sudo ln -s /usr/lib/libgtest.a /usr/local/lib/googletest/libgtest.a
         sudo ln -s /usr/lib/libgtest_main.a /usr/local/lib/googletest/libgtest_main.a
@@ -35,7 +35,8 @@ jobs:
       run: |
         cd test
         make
-        chmod a+x TestBuild
         
     - name: run_tests
-      run: TestBuild
+      run: |
+        cd test
+        ./TestBuild
