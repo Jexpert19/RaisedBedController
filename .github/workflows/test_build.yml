@@ -11,11 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-        
-    - name: install_pthread
-      run: |
-        sudo apt-get install libc6
-        
+                
     - name: make_build
       run: |
         cd test
