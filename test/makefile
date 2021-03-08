@@ -23,7 +23,7 @@ LFLAGS = -I./lib/googletest/include
 # define any libraries to link into executable:
 #   if I want to link in libraries (libx.so or libx.a) I use the -llibname 
 #   option, something like (this will link in libmylib.so and libm.so:
-LIBS = -l./lib/googletest/lib/gtest.a
+LIBS = -l./lib/googletest/lib/libgtest.a
 
 # define the C source files
 SRCS = ./test_src/test_main.cpp
