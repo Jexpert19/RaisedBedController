@@ -37,6 +37,7 @@ jobs:
         mkdir test_build
         cd test_build
         make ..
+        cd ..
         
     - name: run_tests
       run: ./test_build/TestBuild
