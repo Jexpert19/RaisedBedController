@@ -50,7 +50,7 @@ MAIN = TestBuild
 .PHONY: depend clean
 
 all:    $(MAIN)
-        @echo  TestBuild has been generated
+	@echo  TestBuild has been generated
 
 $(MAIN): $(OBJS) 
         $(CC) $(CFLAGS) $(INCLUDES) -o $(MAIN) $(OBJS) $(LFLAGS) $(LIBS)
